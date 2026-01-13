@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --font: "Poppins", sans-serif;
+    --primary-color:#006370;
+    --secondary-color: #107980;
+    --text-color:#FFFFFF;
+
+}
+
+/* 
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
+   font-weight: 400; 
+   font-style: normal;  
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+} */
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+   font-weight: 400; 
+   font-style: normal;  
+}
+
+@font-face {
+  font-family:"Poppins";
+  src:url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight:600;
+  font-style: normal;
+
+}
+
+/* @font-face {
+  font-family:"OpenSans";
+  src:url("/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight:400;
+  font-style: normal;
+}
+@font-face {
+  font-family:"DMSans";
+  src:url("/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight:400;
+  font-style: normal;
+}
+@font-face {
+  font-family:"DMSans-semibold";
+  src:url("/fonts/DMSans-SemiBold.ttf") format("truetype");
+  font-weight:600;
+  font-style: normal;
+} */
+
+/* select,
+input,
+textarea {
+  font-weight: 400;
+} */
