@@ -62,15 +62,14 @@ const Homepage = () => {
         <Banner/>
 
      {/* <div className="flex gap-6"> */}
-     <div className="flex flex-col md:flex-row gap-6">
+    <div className="flex flex-col gap-6">
 
-  {/* USP Section */}
-  {/* <div className="flex-[1.2]"> */}
-<div className="w-full md:flex-[1.2]">
+  {/* USP ROW – 3 USP SECTIONS IN ONE ROW */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-
-    <Section title="USP Section">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    {/* USP 1 */}
+    <Section title="USP Section 1">
+      <div className="grid grid-cols-1 gap-4">
         <div>
           <Label text="Title" />
           <Input placeholder="Change Title" />
@@ -85,31 +84,74 @@ const Homepage = () => {
         </div>
       </div>
     </Section>
-  </div>
 
-  {/* Services Section */}
-  <div className="w-full flex-[2]">
-    <Section title="Services Section">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+    {/* USP 2 */}
+    <Section title="USP Section 2">
+      <div className="grid grid-cols-1 gap-4">
         <div>
           <Label text="Title" />
           <Input placeholder="Change Title" />
         </div>
         <div>
+          <Label text="Text" />
+          <Input placeholder="Change Text" />
+        </div>
+        <div>
+          <Label text="Icon" />
+          <Input placeholder="Change Icon" />
+        </div>
+      </div>
+    </Section>
+
+    {/* USP 3 */}
+    <Section title="USP Section 3">
+      <div className="grid grid-cols-1 gap-4">
+        <div>
+          <Label text="Title" />
+          <Input placeholder="Change Title" />
+        </div>
+        <div>
+          <Label text="Text" />
+          <Input placeholder="Change Text" />
+        </div>
+        <div>
+          <Label text="Icon" />
+          <Input placeholder="Change Icon" />
+        </div>
+      </div>
+    </Section>
+
+  </div>
+
+  {/* SERVICES SECTION – NEXT ROW */}
+  <div className="w-full">
+    <Section title="Services Section">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+        <div>
+          <Label text="Title" />
+          <Input placeholder="Change Title" />
+        </div>
+
+        <div>
           <Label text="Heading" />
           <Input placeholder="Change Heading" />
         </div>
+
         <div>
           <Label text="Description" />
           <Input placeholder="Change Description" />
         </div>
+
         <div>
           <Label text="Image" />
           <Input placeholder="Change Image" />
         </div>
+
       </div>
     </Section>
   </div>
+
 </div>
 
         {/* About Us Section */}
@@ -298,59 +340,78 @@ const Homepage = () => {
 
    {/* pickup and drop section */}
    {/* <div className="flex gap-6"> */}
-   <div className="flex flex-col md:flex-row gap-6">
-  {/* Services Section */}
-  <div className="w-full flex-[2]">
+   {/* Pickup and Drop + FAQ Section */}
+<div className="flex flex-col gap-6">
+
+  {/* PICKUP & DROP – FULL WIDTH */}
+  <div className="w-full">
     <Section title="Pickup and Drop Section">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+
         <div>
           <Label text="Heading" />
           <Input placeholder="Change Heading" />
         </div>
+
         <div>
           <Label text="Description" />
           <Input placeholder="Change Description" />
         </div>
+
         <div>
           <Label text="Image" />
           <Input placeholder="Change Image" />
         </div>
+
         <div>
           <Label text="CTA" />
           <Input placeholder="Change CTA" />
         </div>
+
       </div>
     </Section>
   </div>
-     {/* USP Section */}
-   <div className="w-full flex-[1.2]">
+
+  {/* FAQ SECTION – NEXT ROW */}
+  <div className="w-full">
     <Section title="FAQ Section">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+
         <div>
           <Label text="Title" />
           <Input placeholder="Change Title" />
         </div>
+
         <div>
           <Label text="Heading" />
-          <Input placeholder="Change Text" />
+          <Input placeholder="Change Heading" />
         </div>
+
+        <div>
+          <Label text="Question" />
+          <Input placeholder="Enter Question" />
+        </div>
+
+        <div>
+          <Label text="Answer" />
+          <Input placeholder="Enter Answer" />
+        </div>
+
         <div>
           <Label text="Description" />
-          <Input placeholder="Change Icon" />
+          <Input placeholder="Change Description" />
         </div>
+
       </div>
     </Section>
   </div>
+
 </div>
 
 {/* SEO Preview Section - Last */}
-<Section>
-  
-    
+<Section>  
     {/* Preview Header */}
     <div className="flex items-center gap-2 mb-4 pb-3 border-b border-[#E7EAF3]">
-      
-    
 
     {/* Preview Card */}
     <div className=" rounded-lg overflow-hidden shadow-sm bg-white">  
@@ -375,6 +436,7 @@ const Homepage = () => {
           <Input placeholder="Page title dummy text of the printing..." />
           <p className="font-normal text-[12px] text-[#A0A0A0]">42 to 70 characters used</p>
         </div>
+
         <div>
           <Label text="Description" />
           <Input placeholder="Lorem ipsum dolor sit amet..." />

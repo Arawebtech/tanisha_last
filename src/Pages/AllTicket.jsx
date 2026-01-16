@@ -368,6 +368,7 @@ const handleTicketSuccess = (id) => {
               onClick={() => navigate("/")}>
               <WestIcon /> Back To Dashboard
             </button>
+            
            <div className="relative grid grid-cols-2 gap-2">
               <button className="px-4 py-[6px] text-[12px] rounded-md bg-primary text-white">
               <ListAltOutlinedIcon /> All Ticket

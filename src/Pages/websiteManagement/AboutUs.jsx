@@ -48,8 +48,7 @@ const AboutUs = () => {
       {/* ================= ONE WHITE CONTAINER ================= */}
       <div className="rounded-lg bg-white shadow-sm p-6">
          <h2 className="mb-4 text-[18px] text-[#1E2022] font-semibold"><HomeIcon/> About Us</h2>
-        {/* Banner Section */}
-        <Banner/>
+        
       
       <div className="flex flex-row gap-6 mb-4">
         <div className="w-1/2">
@@ -65,52 +64,105 @@ const AboutUs = () => {
     </div>
 
 
-     <div className="flex flex-col md:flex-row gap-6">
-  {/* About us Section */}
-  {/* <div className="flex-[1.2]"> */}
-<div className="w-full md:flex-[2]">
-    <Section title="About Us Content">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div>
-          <Label text="Title" />
-          <Input placeholder="Change Title" />
-        </div>
-        <div>
-          <Label text="Heading" />
-          <Input placeholder="Change Title" />
-        </div>
-        <div>
-          <Label text="Video Upload" />
-          <FileInput />
-        </div>
-         <div>
-          <Label text="URL Option" />
-          <Input placeholder="Change Title" />
-        </div>
-      </div>
-    </Section>
-  </div>
 
-  {/* Process Section */}
-  <div className="w-full flex-[1.2]">
-    <Section title="Services Section">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div>
-          <Label text="Title" />
-          <Input placeholder="Change Title" />
-        </div>
-        <div>
-          <Label text="Heading" />
-          <Input placeholder="Change Title" />
-        </div>
-        <div>
-          <Label text="Process Steps" />
-          <Input placeholder="Change Title" />
-        </div>
+  
+{/* About Us Section */}
+<div className="w-full mb-8">
+  <Section title="About Us Content">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      
+      <div className="flex flex-col gap-1">
+        <Label text="Title" />
+        <Input placeholder="Change Title" />
       </div>
-    </Section>
-  </div>
+
+      <div className="flex flex-col gap-1">
+        <Label text="Heading" />
+        <Input placeholder="Change Heading" />
+      </div>
+
+      <div className="flex flex-col gap-1">
+        <Label text="Description" />
+        <Input placeholder="Change Description" />
+      </div>
+
+      <div className="flex flex-col gap-1">
+        <Label text="Video Upload" />
+        <FileInput />
+      </div>
+
+      <div className="flex flex-col gap-1">
+        <Label text="URL Option" />
+        <Input placeholder="Enter URL" />
+      </div>
+
+    </div>
+  </Section>
 </div>
+
+ {/* Services Section */}
+<div className="w-full">
+  <Section title="Services Section">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <div className="flex flex-col gap-1">
+        <Label text="Title" />
+        <Input placeholder="Change Title" />
+      </div>
+
+      <div className="flex flex-col gap-1">
+        <Label text="Heading" />
+        <Input placeholder="Change Heading" />
+      </div>
+
+      <div className="flex flex-col gap-1">
+        <Label text="Process Steps" />
+        <Input placeholder="Add Steps" />
+      </div>
+
+    </div>
+  </Section>
+</div>
+
+{/* Process Section */}
+<div className="w-full mb-8">
+  <Section title="Process Section">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+
+      {/* Heading */}
+      <div className="flex flex-col gap-1">
+        <Label text="Heading" />
+        <Input placeholder="Enter Section Heading" />
+      </div>
+
+      {/* Title */}
+      <div className="flex flex-col gap-1">
+        <Label text="Title" />
+        <Input placeholder="Enter Section Title" />
+      </div>
+
+      {/* Step Number */}
+      <div className="flex flex-col gap-1">
+        <Label text="Step Number" />
+        <Input placeholder="Enter Step Number" />
+      </div>
+
+      {/* Image */}
+      <div className="flex flex-col gap-1">
+        <Label text="Image" />
+        <FileInput />
+      </div>
+
+      {/* Name */}
+      <div className="flex flex-col gap-1">
+        <Label text="Name" />
+        <Input placeholder="Enter Name" />
+      </div>
+
+    </div>
+  </Section>
+</div>
+
 
           {/* why choose us */}
         <div className="mb-6 rounded-md border border-gray-200 bg-white p-4">

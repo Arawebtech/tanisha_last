@@ -49,7 +49,7 @@ const DynamicCity = () => {
       <div className="rounded-lg bg-white shadow-sm p-6">
          <h2 className="mb-4 text-[18px] text-[#1E2022] font-semibold"><BusinessCenterIcon/> Dynamic City Page</h2>
         {/* Banner Section */}
-        <Banner/>
+        {/* <Banner/> */}
       
    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
   

@@ -57,7 +57,7 @@ const Privacy = () => {
       <div className="rounded-lg bg-white shadow-sm p-6">
          <h2 className="mb-4 text-[18px] text-[#1E2022] font-semibold"><HomeIcon/>Privacy Policy</h2>
         {/* Banner Section */}
-       <Banner/>
+       {/* <Banner/> */}
 
  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 
